@@ -72,7 +72,7 @@ def dirac(x, x0):
 
 # 定义二维的 Dirac delta，用于平滑二元经验分布的 pdf
 def twodirac(x, y, x0, y0):
-    band = 1
+    band = 3
     d = math.exp(-1 / (2 * band ** 2) * ((x - x0) ** 2 + (y - y0) ** 2)) / ((2 * math.pi) ** 1 * band ** 2)
     return d
 
